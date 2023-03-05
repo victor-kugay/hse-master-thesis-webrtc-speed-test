@@ -1,0 +1,44 @@
+{
+  "name": "hse-master-thesis-webrtc-speed-test",
+  "private": true,
+  "description": "The repository was founded with the purpose of performing webrtc speed test for Victor Kugay master thesis.",
+  "repository": "https://github.com/victor-kugay/hse-master-thesis-webrtc-speed-test.git",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "scripts": {
+    "format": "prettier --write \"src/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/*.ts\" --fix"
+  },
+  "dependencies": {
+ 
+  },
+  "devDependencies": {
+    "@types/node": "18.14.0",
+    "@typescript-eslint/eslint-plugin": "5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "lint-staged": "13.1.2",
+    "prettier": "2.8.4",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5",
+    "yarnhook": "0.6.0"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json}": [
+      "prettier --write"
+    ]
+  }
+}
