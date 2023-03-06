@@ -15,3 +15,23 @@ The repository was founded with the purpose of performing webrtc speed test for 
 
 * [src](./src) - source code for sharing data using webrtc
 
+
+## Getting started
+
+### Start Bittorrent Tracker
+
+```bash
+$ yarn bittorrent-tracker
+```
+
+### Start Seeding File
+
+```bash
+$ yarn torrent:seed
+```
+
+### Start Downloading File
+
+```bash
+$ yarn torrent:download
+```
