@@ -4,6 +4,7 @@
   "description": "The repository was founded with the purpose of performing webrtc speed test for Victor Kugay master thesis.",
   "repository": "https://github.com/victor-kugay/hse-master-thesis-webrtc-speed-test.git",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
@@ -19,6 +20,8 @@
   },
   "dependencies": {
     "bittorrent-tracker": "10.0.2",
+    "prettier-bytes": "1.0.4",
+    "uuid": "9.0.0",
     "webtorrent": "2.0.14",
     "wrtc": "0.4.7"
   },
@@ -26,6 +29,7 @@
     "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
+    "k6": "0.0.0",
     "lint-staged": "13.1.2",
     "prettier": "2.8.4",
     "yarnhook": "0.6.0"
