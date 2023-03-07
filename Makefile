@@ -1,5 +1,10 @@
 start:
-	echo none
+	make build
+	make up
+
+build:
+	docker-compose build
 
 up:
-	docker compose -f provision/docker-compose.yaml up
+	docker-compose down
+	docker-compose up > logs.txt

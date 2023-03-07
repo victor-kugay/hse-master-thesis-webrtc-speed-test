@@ -4,6 +4,7 @@
   "description": "The repository was founded with the purpose of performing webrtc speed test for Victor Kugay master thesis.",
   "repository": "https://github.com/victor-kugay/hse-master-thesis-webrtc-speed-test.git",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
@@ -12,24 +13,23 @@
     "linux"
   ],
   "scripts": {
-    "format": "prettier --write \"src/*.ts\"",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint \"src/*.ts\" --fix"
+    "format": "prettier --write \"{src,tests}/**/*.mjs\"",
+    "lint": "eslint \"{src,tests}/**/*.mjs\""
   },
   "dependencies": {
- 
+    "bittorrent-tracker": "10.0.2",
+    "prettier-bytes": "1.0.4",
+    "uuid": "9.0.0",
+    "websocket": "1.0.34",
+    "webtorrent": "2.0.14",
+    "wrtc": "0.4.7"
   },
   "devDependencies": {
-    "@types/node": "18.14.0",
-    "@typescript-eslint/eslint-plugin": "5.52.0",
-    "@typescript-eslint/parser": "5.52.0",
     "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
     "lint-staged": "13.1.2",
     "prettier": "2.8.4",
-    "ts-node": "10.9.1",
-    "typescript": "4.9.5",
     "yarnhook": "0.6.0"
   },
   "lint-staged": {
