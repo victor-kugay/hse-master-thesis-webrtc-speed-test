@@ -1,0 +1,53 @@
+version: "3"
+services:
+  torrent:
+    restart: always
+    image: torrent
+    container_name: torrent
+    build:
+      context: ./
+      dockerfile: Dockerfile.torrent
+    ports:
+      - 8000:8000
+    networks:
+      - hse-master-thesis-webrtc-speed-test_webtorrent
+
+  seed:
+    image: seed
+    container_name: seed
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile.seed
+    depends_on:
+      - torrent
+    networks:
+      - hse-master-thesis-webrtc-speed-test_webtorrent
+ 
+  add:
+    image: add
+    container_name: add
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile.add
+    depends_on:
+      - torrent
+      - seed
+    networks:
+      - hse-master-thesis-webrtc-speed-test_webtorrent
+
+networks:
+  hse-master-thesis-webrtc-speed-test_webtorrent:
+
+# version: "3"
+# services:
+#   torrent:
+#     restart: always
+#     image: torrent
+#     container_name: torrent
+#     build:
+#       context: ./
+#       dockerfile: Dockerfile
+#     ports:
+#       - 8000:8000

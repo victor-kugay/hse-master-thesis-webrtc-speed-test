@@ -1,0 +1,1 @@
+parallel --ungroup 'node src/cases/case-seed.mjs' ::: {1..2}

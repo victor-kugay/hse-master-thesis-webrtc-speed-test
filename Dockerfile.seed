@@ -1,0 +1,16 @@
+FROM nikolaik/python-nodejs
+
+WORKDIR /app
+
+RUN apt-get update -qqy && \
+    apt-get install -y parallel && \
+    apt-get install -y libasound2 && \
+    pip install -U lxml
+
+ADD scripts/seed.sh ./scripts/seed.sh
+ADD package.json ./
+ADD src ./src
+
+RUN yarn install --production
+
+CMD [ "sh", "scripts/seed.sh"]
