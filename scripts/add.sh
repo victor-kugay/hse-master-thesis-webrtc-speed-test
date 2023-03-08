@@ -1,1 +1,2 @@
-parallel --ungroup 'node src/cases/case-add.mjs' ::: {1..2}
+node src/torrent/add.mjs
+# parallel --ungroup 'node src/torrent/add.mjs' ::: {1..2}

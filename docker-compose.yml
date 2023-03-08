@@ -7,8 +7,15 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.torrent
+    env_file: 
+      - ./.env.compose
     ports:
       - 8000:8000
+      - 3000:3000
+    logging:
+      driver: "json-file" 
+      options:
+        tag: torrent 
     networks:
       - hse-master-thesis-webrtc-speed-test_webtorrent
 
@@ -19,6 +26,12 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.seed
+    env_file: 
+      - ./.env.compose
+    logging:
+      driver: "json-file" 
+      options:
+        tag: seed 
     depends_on:
       - torrent
     networks:
@@ -31,6 +44,12 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.add
+    env_file: 
+      - ./.env.compose
+    logging:
+      driver: "json-file" 
+      options:
+        tag: add
     depends_on:
       - torrent
       - seed
@@ -39,15 +58,3 @@ services:
 
 networks:
   hse-master-thesis-webrtc-speed-test_webtorrent:
-
-# version: "3"
-# services:
-#   torrent:
-#     restart: always
-#     image: torrent
-#     container_name: torrent
-#     build:
-#       context: ./
-#       dockerfile: Dockerfile
-#     ports:
-#       - 8000:8000

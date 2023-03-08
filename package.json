@@ -4,7 +4,6 @@
   "description": "The repository was founded with the purpose of performing webrtc speed test for Victor Kugay master thesis.",
   "repository": "https://github.com/victor-kugay/hse-master-thesis-webrtc-speed-test.git",
   "license": "MIT",
-  "type": "module",
   "engines": {
     "node": ">=18"
   },
@@ -18,9 +17,11 @@
   },
   "dependencies": {
     "bittorrent-tracker": "10.0.2",
+    "pino": "8.11.0",
+    "pino-pretty": "9.4.0",
     "prettier-bytes": "1.0.4",
-    "uuid": "9.0.0",
-    "websocket": "1.0.34",
+    "socket.io": "4.6.1",
+    "socket.io-client": "4.6.1",
     "webtorrent": "2.0.14",
     "wrtc": "0.4.7"
   },

@@ -7,4 +7,4 @@ build:
 
 up:
 	docker-compose down
-	docker-compose up > logs.txt
+	docker-compose up

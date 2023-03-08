@@ -1,12 +1,20 @@
-FROM node:18.12.1-alpine
+FROM nikolaik/python-nodejs
 
 WORKDIR /app
 
-RUN addgroup app &&\
-    adduser -S app -G app
+RUN apt-get update -qqy && \
+    apt-get install -y parallel && \
+    apt-get install -y libasound2 && \
+    pip install -U lxml
 
-ADD . /app
+ADD scripts/server.sh ./scripts/server.sh
+ADD assets ./assets
+ADD package.json ./
+ADD src ./src
+
+RUN yarn install --production
 
 EXPOSE 8000
+EXPOSE 3000
 
-ENTRYPOINT [ "node", "node_modules/.bin/bittorrent-tracker"]
+CMD [ "sh", "scripts/server.sh"]
