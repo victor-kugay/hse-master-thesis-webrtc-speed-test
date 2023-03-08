@@ -18,20 +18,6 @@ The repository was founded with the purpose of performing webrtc speed test for 
 
 ## Getting started
 
-### Start Bittorrent Tracker
-
 ```bash
-$ yarn bittorrent-tracker
-```
-
-### Start Seeding File
-
-```bash
-$ yarn torrent:seed
-```
-
-### Start Downloading File
-
-```bash
-$ yarn torrent:download
+$ make start
 ```

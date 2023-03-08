@@ -3,7 +3,7 @@ import {createLogger} from '../utils/logger.mjs';
 import {WEBTORRENT_CLIENT_CONFIG} from '../constants.mjs';
 import {createWebTorrentClient} from './webtorrent.mjs';
 
-const {APP_TORRENT_INFO_URL = 'ws://localhost:3000', APP_SEED_PATH = 'assets/test.pdf'} = process.env;
+const {APP_TORRENT_INFO_URL = 'ws://localhost:3000', APP_SEED_PATH = 'assets/tiff/LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_64_64.tif'} = process.env;
 
 main();
 

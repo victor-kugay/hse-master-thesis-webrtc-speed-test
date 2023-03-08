@@ -13,7 +13,7 @@ function main() {
   const addClient = createWebTorrentClient();
   const socket = io(APP_TORRENT_INFO_URL);
   // время старта скачивания торрента
-  const startTime = Date.now();
+  let startTime = 0;
   // общее количество загруженных байт
   let totalBytes = 0;
   // лог с количеством загруженных байт,
@@ -21,8 +21,11 @@ function main() {
   const download = [];
 
   const handleDownloadEvent = (torrent, bytes) => {
+    const nowTime = Date.now();
+    const deltaTime = nowTime - startTime;
     download.push({
-      downloaded: bytes,
+      startDownloadDeltaInMs: deltaTime,
+      downloaded: prettierBytes(bytes),
       progress: torrent.progress,
       downloadSpeed: prettierBytes(torrent.downloadSpeed),
     });
@@ -57,6 +60,7 @@ function main() {
       message: 'Torrent.Start',
       payload: {infoHash, magnetURI}
     });
+    startTime = Date.now();
     // запускаем скачивание торрента
     addClient.add(magnetURI, WEBTORRENT_CLIENT_CONFIG, (torrent) => {
       logger.info({
