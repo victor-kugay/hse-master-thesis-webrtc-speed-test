@@ -8,6 +8,7 @@ RUN apt-get update -qqy && \
     pip install -U lxml
 
 ADD scripts/seed.sh ./scripts/seed.sh
+ADD assets ./assets
 ADD package.json ./
 ADD src ./src
 

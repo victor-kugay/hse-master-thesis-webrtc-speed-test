@@ -18,9 +18,11 @@
   },
   "dependencies": {
     "bittorrent-tracker": "10.0.2",
+    "pino": "8.11.0",
+    "pino-pretty": "9.4.0",
     "prettier-bytes": "1.0.4",
-    "uuid": "9.0.0",
-    "websocket": "1.0.34",
+    "socket.io": "4.6.1",
+    "socket.io-client": "4.6.1",
     "webtorrent": "2.0.14",
     "wrtc": "0.4.7"
   },

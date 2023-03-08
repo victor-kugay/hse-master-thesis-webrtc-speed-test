@@ -1,0 +1,89 @@
+add  | (node:7) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+add  | (Use `node --trace-warnings ...` to show where the warning was created)
+add  | [20:15:16.339] [32mINFO[39m (7):
+add  |     message: "Torrent.Start"
+add  |     payload: {
+add  |       "infoHash": "1c751bd1ba88b99084a937d29c788e6d4e47f6d6",
+add  |       "magnetURI": "magnet:?xt=urn:btih:1c751bd1ba88b99084a937d29c788e6d4e47f6d6&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_128_128.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:15:16.429] [32mINFO[39m (7):
+add  |     message: "Torrent.Added"
+add  |     payload: {
+add  |       "infoHash": "1c751bd1ba88b99084a937d29c788e6d4e47f6d6",
+add  |       "magnetURI": "magnet:?xt=urn:btih:1c751bd1ba88b99084a937d29c788e6d4e47f6d6&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_128_128.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:15:16.549] [32mINFO[39m (7):
+add  |     message: "Torrent.Done"
+add  |     payload: {
+add  |       "infoHash": "magnet:?xt=urn:btih:1c751bd1ba88b99084a937d29c788e6d4e47f6d6&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_128_128.tif&tr=udp%3A%2F%2Ftorrent%3A8000",
+add  |       "download": [
+add  |         {
+add  |           "startDownloadDeltaInMs": 95,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "584 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 96,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "596 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 98,
+add  |           "downloaded": "5 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "601 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 109,
+add  |           "downloaded": "13 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "614 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 150,
+add  |           "downloaded": "594 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "1.2 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 160,
+add  |           "downloaded": "9 B",
+add  |           "progress": 0.01780468796834722,
+add  |           "downloadSpeed": "1.2 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 162,
+add  |           "downloaded": "9 B",
+add  |           "progress": 0.01780468796834722,
+add  |           "downloadSpeed": "1.2 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 202,
+add  |           "downloaded": "13 B",
+add  |           "progress": 0.01780468796834722,
+add  |           "downloadSpeed": "1.2 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 202,
+add  |           "downloaded": "16 KB",
+add  |           "progress": 0.01780468796834722,
+add  |           "downloadSpeed": "17 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 204,
+add  |           "downloaded": "16 KB",
+add  |           "progress": 0.01780468796834722,
+add  |           "downloadSpeed": "34 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 205,
+add  |           "downloaded": "469 B",
+add  |           "progress": 0.5089023439841736,
+add  |           "downloadSpeed": "34 KB"
+add  |         }
+add  |       ],
+add  |       "startDoneDeltaInMs": 208,
+add  |       "totalDownloaded": "33 KB"
+add  |     }
