@@ -4,6 +4,7 @@
   "description": "The repository was founded with the purpose of performing webrtc speed test for Victor Kugay master thesis.",
   "repository": "https://github.com/victor-kugay/hse-master-thesis-webrtc-speed-test.git",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
