@@ -1,0 +1,59 @@
+add  | (node:7) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+add  | (Use `node --trace-warnings ...` to show where the warning was created)
+add  | [20:14:11.100] [32mINFO[39m (7):
+add  |     message: "Torrent.Start"
+add  |     payload: {
+add  |       "infoHash": "4d9d39657d47a293c15e3872694c786ea60ee426",
+add  |       "magnetURI": "magnet:?xt=urn:btih:4d9d39657d47a293c15e3872694c786ea60ee426&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_64_64.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:14:11.177] [32mINFO[39m (7):
+add  |     message: "Torrent.Added"
+add  |     payload: {
+add  |       "infoHash": "4d9d39657d47a293c15e3872694c786ea60ee426",
+add  |       "magnetURI": "magnet:?xt=urn:btih:4d9d39657d47a293c15e3872694c786ea60ee426&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_64_64.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:14:11.206] [32mINFO[39m (7):
+add  |     message: "Torrent.Done"
+add  |     payload: {
+add  |       "infoHash": "magnet:?xt=urn:btih:4d9d39657d47a293c15e3872694c786ea60ee426&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_64_64.tif&tr=udp%3A%2F%2Ftorrent%3A8000",
+add  |       "download": [
+add  |         {
+add  |           "startDownloadDeltaInMs": 82,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "541 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 83,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "553 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 84,
+add  |           "downloaded": "5 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "558 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 96,
+add  |           "downloaded": "13 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "571 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 98,
+add  |           "downloaded": "8.7 KB",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "9.3 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 99,
+add  |           "downloaded": "74 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "9.3 KB"
+add  |         }
+add  |       ],
+add  |       "startDoneDeltaInMs": 105,
+add  |       "totalDownloaded": "8.8 KB"
+add  |     }

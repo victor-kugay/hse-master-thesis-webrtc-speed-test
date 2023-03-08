@@ -1,0 +1,119 @@
+add  | (node:7) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+add  | (Use `node --trace-warnings ...` to show where the warning was created)
+add  | [20:16:01.285] [32mINFO[39m (7):
+add  |     message: "Torrent.Start"
+add  |     payload: {
+add  |       "infoHash": "df3d2e72c5cd9c19ef86f54e4c5c7e0217d83563",
+add  |       "magnetURI": "magnet:?xt=urn:btih:df3d2e72c5cd9c19ef86f54e4c5c7e0217d83563&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_256_256.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:16:01.375] [32mINFO[39m (7):
+add  |     message: "Torrent.Added"
+add  |     payload: {
+add  |       "infoHash": "df3d2e72c5cd9c19ef86f54e4c5c7e0217d83563",
+add  |       "magnetURI": "magnet:?xt=urn:btih:df3d2e72c5cd9c19ef86f54e4c5c7e0217d83563&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_256_256.tif&tr=udp%3A%2F%2Ftorrent%3A8000"
+add  |     }
+add  | [20:16:01.504] [32mINFO[39m (7):
+add  |     message: "Torrent.Done"
+add  |     payload: {
+add  |       "infoHash": "magnet:?xt=urn:btih:df3d2e72c5cd9c19ef86f54e4c5c7e0217d83563&dn=LC08_L1TP_191024_20150701_20170407_01_T1_sr_band5_256_256.tif&tr=udp%3A%2F%2Ftorrent%3A8000",
+add  |       "download": [
+add  |         {
+add  |           "startDownloadDeltaInMs": 96,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "706 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 97,
+add  |           "downloaded": "12 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "718 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 98,
+add  |           "downloaded": "5 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "723 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 109,
+add  |           "downloaded": "13 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "736 B"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 150,
+add  |           "downloaded": "666 B",
+add  |           "progress": 0,
+add  |           "downloadSpeed": "1.4 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 157,
+add  |           "downloaded": "9 B",
+add  |           "progress": 0.005055488924987475,
+add  |           "downloadSpeed": "1.4 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 159,
+add  |           "downloaded": "9 B",
+add  |           "progress": 0.005055488924987475,
+add  |           "downloadSpeed": "1.4 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 199,
+add  |           "downloaded": "4.4 KB",
+add  |           "progress": 0.005055488924987475,
+add  |           "downloadSpeed": "5.8 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 200,
+add  |           "downloaded": "12 KB",
+add  |           "progress": 0.005055488924987475,
+add  |           "downloadSpeed": "18 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 202,
+add  |           "downloaded": "32 KB",
+add  |           "progress": 0.12942355280936405,
+add  |           "downloadSpeed": "50 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 203,
+add  |           "downloaded": "469 B",
+add  |           "progress": 0.2537916166937406,
+add  |           "downloadSpeed": "51 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 208,
+add  |           "downloaded": "27 B",
+add  |           "progress": 0.37815968057811716,
+add  |           "downloadSpeed": "51 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 209,
+add  |           "downloaded": "27 B",
+add  |           "progress": 0.37815968057811716,
+add  |           "downloadSpeed": "51 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 210,
+add  |           "downloaded": "33 KB",
+add  |           "progress": 0.37815968057811716,
+add  |           "downloadSpeed": "83 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 211,
+add  |           "downloaded": "32 KB",
+add  |           "progress": 0.6268958083468703,
+add  |           "downloadSpeed": "116 KB"
+add  |         },
+add  |         {
+add  |           "startDownloadDeltaInMs": 212,
+add  |           "downloaded": "17 KB",
+add  |           "progress": 0.7512638722312469,
+add  |           "downloadSpeed": "133 KB"
+add  |         }
+add  |       ],
+add  |       "startDoneDeltaInMs": 218,
+add  |       "totalDownloaded": "132 KB"
+add  |     }
